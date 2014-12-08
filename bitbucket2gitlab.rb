@@ -6,15 +6,11 @@ require 'recursive-open-struct'
 require 'logger'
 require 'pry'
 
-clients        = {}
-private_tokens = {
-    'opensourceame' => 'HszEnsU2Jtx9HcvmAom-',
-    'cyerbey'       => 'oyqGTN1-6akR_jm2JVhe',
-}
-
+clients          = {}
+private_tokens   = {}
 issues_json_file = '/tmp/db-1.0.json'
-api_url          = 'http://gitlab.scrapconnection.com/api/v3'
-project_name     = 'scrapconnection/test'
+api_url          = ''
+project_name     = 'repos/test'
 project          = nil
 
 MAP_ISSUE = {
