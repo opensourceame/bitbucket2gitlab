@@ -122,7 +122,7 @@ data.issues.each do |bitbucket_issue|
     comment = gitlab(bitbucket_comment['user']).create_issue_note(project.id, issue.id, content)
 
   end
-binding.pry
+
   gitlab(bitbucket_issue.reporter).close_issue(project.id, issue.id) if bitbucket_issue.status == 'resolved'
 
 end
